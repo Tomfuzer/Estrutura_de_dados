@@ -57,6 +57,9 @@ printf("\n\n");
 
 
 int main (){
+
+printf("Autor: Tom Fuzer!\n");
+
 lista primeiraLista;
 primeiraLista.inicio = NULL;
 primeiraLista.tamanho = 0;
