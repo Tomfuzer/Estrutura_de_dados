@@ -33,10 +33,10 @@ void inserir_fim(lista *primeiraLista, int valor){
     if (primeiraLista->inicio == NULL){ // Se o valor a ser inserido (noh) for o primeiro item da minha lista, preciso verificar! 
         primeiraLista->inicio = novo; // o inicio da minha lista agora sera o valor noh criado
         }else{
-        no = primeiraLista->inicio;
+        no = primeiraLista->inicio; // no vai ser o primeiro elemento da lista
         while(no->proximo != NULL)
             no = no->proximo; //DÚVIDA!!! Quando eu -> no->proximo ele já sabe em qual variavel dentro do no ele deve colocar o valor, nao preciso fazer algo como no->(variavel) = no->proximo???
-        no->proximo = novo;
+        no->proximo = novo; // quando no for nulo, ou seja, cheguei no ultimo no da lista, então esse no vai apontar pro no (novo) recem criado!!
     }
     primeiraLista->tamanho++;
 
